@@ -1,0 +1,55 @@
+.rs
+{
+    background-color: #0084ff;
+    height: 130px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#nm
+{
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+    font-size: 80px;
+    color: white;
+}
+#chatcont
+{
+    /*margin-left: 50% ;*/
+
+}
+#but
+{
+    display:none;
+
+}
+
+.al
+{
+    margin-top: 10px;
+    position: relative;
+    left:20px;
+
+}
+.al1
+{
+
+    left:5%;
+    top: 25%;
+    /*margin-left: 50% ;*/
+    /*margin-top: 50%;*/
+}
+.al2
+{
+    position: relative;
+    left:35%;
+    top: 25%;
+    /*margin-left: 50% ;*/
+    /*margin-top: 50%;*/
+}
+
+/*div.mess*/
+/*{*/
+    /*wid*/
+    /*bottom: 5%;*/
+
+/*}*/

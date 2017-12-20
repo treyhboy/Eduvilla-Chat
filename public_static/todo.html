@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="todo.js"></script>
+</head>
+<body>
+<div class="row header">
+    <div class="col"></div>
+    <div class="col">
+        <h1 align="center">Todo List</h1>
+    </div>
+    <div class="col"></div>
+</div>
+
+<div class="container">
+    <div class="row" id="input-row">
+        <div class="col">
+            <input type="text" class="form-control" id="newtodo">
+        </div>
+        <div class="col-2">
+            <button id="addbtn" class="btn btn-outline-primary"><i class="ion-android-add-circle"></i></button>
+        </div>
+        <div class="col-2">
+            <button id="deletebtn" class="btn btn-outline-danger">
+                <i class="ion-android-delete" ></i>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div id="todolist-container" class="col-12">
+        <ul class="list-group" id="todolist">
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

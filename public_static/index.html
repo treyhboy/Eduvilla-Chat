@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Eduvilla</title>
+    <link rel="stylesheet" href="styles/chatroom.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200|Cookie" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200|Cookie" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="client.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top" id="navu">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <li data-menuanchor="Home" style="list-style-type: none;"><a href="#play" class="navbar-brand" style="font-size:30px;">Eduvilla</a><span style="font-family: 'Assistant';font-size: 17px;">chat</span></li>
+        </div>
+    </div>
+</nav>
+<div class="unsure">
+    <div class="box">
+        <input type="text"  placeholder="Name" id="name">
+        <input type="password"  id="pass" placeholder="Authorization key">
+        <button class="butt" id="jumpin">Jump in</button>
+    </div>
+    <div class="main" >
+        <ul id="msglist">
+
+        </ul>
+    </div>
+
+    <div class="footer">
+        <input type="text" name="message" class="inputbox" id="newmsg">
+        <button class="send" id="send"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

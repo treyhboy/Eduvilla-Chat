@@ -1,0 +1,204 @@
+body{
+	margin: 0;
+}
+
+.playarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: white;
+  font-weight: 500;
+}
+
+.itext {
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  font-size: 65px;
+  white-space: nowrap;
+  font-family: 'Assistant', sans-serif ;
+}
+
+.itext:after {
+  content: 'Learn';
+  font-size: 60px;
+  margin-left: 3%;
+  background: #ddd6f3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hoverbox {
+  width: 25%;
+  height: 100vh;
+  position: relative;
+  z-index:10;
+}
+
+.hoverbox.hover_1:hover ~ .itext:after {
+  content: 'Innovate';
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.hoverbox.hover_2:hover ~ .itext:after {
+  content: 'Play';
+  background: #FF9933;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #138808, #FFFFFF, #FF9933);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #138808, #FFFFFF, #FF9933); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.hoverbox.hover_3:hover ~ .itext:after {
+  content: 'Create Friends';
+  background: #fe8c00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.hoverbox.hover_4:hover ~ .itext:after {
+  content: 'Interact';
+  background: #00c3ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.hoverbox.hover_5:hover ~ .itext:after {
+  content: 'Discover';
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.hoverbox.hover_6:hover ~ .itext:after {
+  content: 'Connect';
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.hoverbox.hover_7:hover ~ .itext:after {
+  content: 'Explore';
+  background: #F7971E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.hoverbox.hover_8:hover ~ .itext:after {
+  content: 'Aspire';
+  background: #cb2d3e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.itext {
+  animation: appear 1s ease-in-out 1;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.12);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#navu {
+  margin: 0;
+  border-radius: 0;
+  font-family: 'Assistant',sans-serif;
+  font-size: 25px;
+  position: fixed;
+  font-weight: 600;
+}
+
+nav a{
+	color: black !important;
+}
+
+nav a:hover{
+	background-color: white !important;
+	color: #FFC107 !important;
+}
+
+.na {
+  animation: navappear 500ms ease-in 1;
+}
+
+@keyframes navappear {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.page{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 50px;
+	font-family: 'Assistant',sans-serif;
+	font-size: 60px;
+	min-height: 100vh;
+	background-color: #FFEB3B;
+	padding-bottom: 20px;
+}
+
+.content {
+	font-size: 20px;
+	margin: 40px;
+}
+
+#getstarted{
+	background-color: white;
+}
+
+.butt{
+	box-shadow: 0;
+	outline: none;
+	border: 0;
+	background-color: #FBC02D;
+	height: 50px;
+	min-width: 120px;
+	font-family: 'Assistant',sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+.butt:hover {
+	background-color: white;
+	color: #FBC02D;
+	cursor: pointer;
+	border: 2px solid #FBC02D;
+}

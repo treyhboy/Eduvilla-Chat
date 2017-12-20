@@ -1,0 +1,146 @@
+body{
+	margin: 0; 
+	overflow-x: hidden;
+}
+
+#navu{
+	height: 80px;
+	padding-top: 12px;
+	background-color: #FFEB3B;
+}
+
+#navu a{
+	color: black;
+	font-size: 40px !important;
+	font-family: 'Assistant',sans-serif;
+	font-weight: 600;
+}
+
+.unsure{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  font-family:'Assistant',sans-serif;
+  font-size:20px;
+  align-items:center;
+}
+
+input
+{
+  box-shadow:0;
+  border:none;
+  border-radius:0;
+  background-color:transparent;
+  border-bottom:2px solid #FFC107;
+  width:270px;
+  height:40px;
+  margin-top:20px;
+  color: black;
+  padding-left:5px;
+}
+
+input:focus
+{
+  outline: none;
+  color: black;
+  caret-color: black;
+}
+
+.butt{
+	box-shadow: 0;
+	outline: none;
+	border: 0;
+	background-color: #FBC02D;
+	height: 50px;
+	min-width: 120px;
+	font-family: 'Assistant',sans-serif;
+	font-size: 18px;
+	margin-top: 15px;
+	
+	font-weight: 600;
+}
+.butt:hover {
+	background-color: white;
+	color: #FBC02D;
+	cursor: pointer;
+	border: 2px solid #FBC02D;
+}
+
+.box
+{
+  height:250px;
+  width:380px;
+  background:rgba(255,255,255,0.53);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  position:absolute;
+  z-index:2;
+  margin-top: 350px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding:7px;
+}
+
+.main{
+	min-height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	margin-top: 90px;
+	display: none;
+}
+
+.message{
+	min-height: 20px;
+	width: 240px;
+	margin: 20px; 
+	padding: 10px;
+	background-color: #eeeeee;
+	border-radius: 4px;
+	box-shadow:0 2px 5px rgba(0, 0, 0, 0.3);
+	font-family: 'Assistant',sans-serif;
+	font-size: 17px;
+}
+
+.right{
+	margin-left: 80%;
+	background-color: #FFF9C4;
+}	
+
+.footer{
+	height: 60px;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 7px; 
+    display: none;
+}
+
+.inputbox {
+	height: 45px;
+	width: 1270px;
+	background-color: #e0e0e0;
+	box-shadow: 0;
+	outline: none;
+	border: 0;
+	margin-bottom: 10px;
+	box-shadow:0 2px 5px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	font-family: 'Assistant',sans-serif;
+	color: black;
+	font-size: 17px;
+}
+
+.send {
+	background-color: white;
+	height: 45px;
+	width: 45px;
+	box-shadow: 0;
+	outline: none;
+	border: 0;
+	font-size: 20px;
+}
